@@ -28,7 +28,7 @@ const corsOptions = {
     "http://localhost:3001",
     "http://127.0.0.1:3001",
     process.env.FRONTEND_URL || "http://localhost:3001",
-    "https://diabea-check.vercel.app",
+    "https://diabeacheck-frontend.vercel.app",
   ],
   credentials: true,
   optionsSuccessStatus: 200,
