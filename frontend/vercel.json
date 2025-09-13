@@ -23,6 +23,6 @@
     }
   ],
   "env": {
-    "REACT_APP_API_URL": "https://diabea-check.vercel.app"
+    "REACT_APP_API_URL": "https://diabeacheck-frontend.vercel.app"
   }
 }
