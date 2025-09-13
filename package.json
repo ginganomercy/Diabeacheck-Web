@@ -1,0 +1,44 @@
+{
+  "name": "diabeacheck",
+  "version": "1.0.0",
+  "description": "DiabeaCheck - Diabetes Risk Prediction Application",
+  "main": "backend/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "backend:dev": "cd backend && npm run dev",
+    "frontend:dev": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "test": "npm run backend:test && npm run frontend:test",
+    "backend:test": "cd backend && npm test",
+    "frontend:test": "cd frontend && npm test",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start"
+  },
+  "keywords": [
+    "diabetes",
+    "prediction",
+    "machine-learning",
+    "healthcare",
+    "react",
+    "nodejs"
+  ],
+  "author": "DiabeaCheck Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.514.0",
+    "mysql2": "^3.6.0"
+  }
+}
